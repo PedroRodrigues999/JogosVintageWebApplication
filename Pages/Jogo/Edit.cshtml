@@ -1,0 +1,60 @@
+﻿@page
+@model JogosVintageWebApplication.Pages.Jogo.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Jogos</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Jogos.ID" />
+            <div class="form-group">
+                <label asp-for="Jogos.Imagem" class="control-label"></label>
+                <input asp-for="Jogos.Imagem" class="form-control" />
+                <span asp-validation-for="Jogos.Imagem" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Jogos.Name" class="control-label"></label>
+                <input asp-for="Jogos.Name" class="form-control" />
+                <span asp-validation-for="Jogos.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Jogos.Descrição" class="control-label"></label>
+                <input asp-for="Jogos.Descrição" class="form-control" />
+                <span asp-validation-for="Jogos.Descrição" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Jogos.Plataforma" class="control-label"></label>
+                <input asp-for="Jogos.Plataforma" class="form-control" />
+                <span asp-validation-for="Jogos.Plataforma" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Jogos.Modelo" class="control-label"></label>
+                <input asp-for="Jogos.Modelo" class="form-control" />
+                <span asp-validation-for="Jogos.Modelo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Jogos.idioma" class="control-label"></label>
+                <input asp-for="Jogos.idioma" class="form-control" />
+                <span asp-validation-for="Jogos.idioma" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

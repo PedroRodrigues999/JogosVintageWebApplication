@@ -1,0 +1,65 @@
+﻿@page
+@model JogosVintageWebApplication.Pages.Consola.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Consolas</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Consolas.ID" />
+            <div class="form-group">
+                <label asp-for="Consolas.Imagem" class="control-label"></label>
+                <input asp-for="Consolas.Imagem" class="form-control" />
+                <span asp-validation-for="Consolas.Imagem" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Consolas.Name" class="control-label"></label>
+                <input asp-for="Consolas.Name" class="form-control" />
+                <span asp-validation-for="Consolas.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Consolas.Descrição" class="control-label"></label>
+                <input asp-for="Consolas.Descrição" class="form-control" />
+                <span asp-validation-for="Consolas.Descrição" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Consolas.Processador" class="control-label"></label>
+                <input asp-for="Consolas.Processador" class="form-control" />
+                <span asp-validation-for="Consolas.Processador" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Consolas.RAM" class="control-label"></label>
+                <input asp-for="Consolas.RAM" class="form-control" />
+                <span asp-validation-for="Consolas.RAM" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Consolas.Saida" class="control-label"></label>
+                <input asp-for="Consolas.Saida" class="form-control" />
+                <span asp-validation-for="Consolas.Saida" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Consolas.Ano" class="control-label"></label>
+                <input asp-for="Consolas.Ano" class="form-control" />
+                <span asp-validation-for="Consolas.Ano" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
