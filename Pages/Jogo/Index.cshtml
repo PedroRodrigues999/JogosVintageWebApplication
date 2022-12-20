@@ -38,7 +38,7 @@
 @foreach (var item in Model.Jogos) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.Imagem)
+               <img src="@item.Imagem" style="width:256px;height:144px;object-fit:contain; max-width: 100%; object-position:center" alt="Imagem">
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Name)
