@@ -8,7 +8,7 @@
         public string? Descrição { get; set; }
         public string? Plataforma  { get; set; }
         public string? Modelo  { get; set; }
-        public string? idioma  { get; set; }
+        public string? Idioma  { get; set; }
         
     }
 }
