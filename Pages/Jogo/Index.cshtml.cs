@@ -28,5 +28,6 @@ namespace JogosVintageWebApplication.Pages.Jogo
                 Jogos = await _context.Jogos.ToListAsync();
             }
         }
+        
     }
 }
