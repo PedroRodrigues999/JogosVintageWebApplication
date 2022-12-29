@@ -24,8 +24,8 @@ namespace JogosVintageWebApplication.Data
             modelBuilder.Entity<Consolas>().HasData(
                 new Consolas
                 {
-                     
-                    ID= 1,
+
+                    ID =1,
                     Imagem = "lib\\img\\Consolas\\Console1.jpg",
                     Name = "NES",
                     Descrição = "O Nintendo Entertainment System (NES, popularmente chamado de Nintendinho no Brasil) é um console de videogame de 8 bits lançado pela Nintendo na América do Norte, Europa, Ásia, Austrália e Brasil. Originalmente lançado no Japão em 1983 com o nome de Nintendo Family Computer",
@@ -38,7 +38,7 @@ namespace JogosVintageWebApplication.Data
                 },
                 new Consolas
                 {
-                    ID= 2,
+                    ID = 2,
                     Imagem = "lib\\img\\Consolas\\Console2.jpg",
                     Name = "Mega Drive",
                     Descrição = "Consola de vídeo jogo de 16 bits, desenvolvido e comercializado pela Sega sendo um sucessor do Master System. O console foi lançado em 1988 no Japão como Mega Drive e em 1989 na América do Norte como Genesis.",
@@ -65,7 +65,7 @@ namespace JogosVintageWebApplication.Data
                 },
                 new Jogos
                 {
-                    ID = 2,
+                    ID=2,
                     Imagem = "lib\\img\\Jogos\\Jogo2.jpg",
                     Name = "Streets of Rage",
                     Descrição = "Jogo eletrônico de beat 'em up que foi desenvolvido e publicado pela Sega para o Mega Drive. Foi lançado nos Estados Unidos em 31 de dezembro de 1990 e no Japão no dia 2 de agosto de 1991.",

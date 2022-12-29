@@ -46,6 +46,7 @@ namespace JogosVintageWebApplication.Migrations
                 {
                     table.PrimaryKey("PK_Jogos", x => x.ID);
                 });
+
         }
 
         /// <inheritdoc />
