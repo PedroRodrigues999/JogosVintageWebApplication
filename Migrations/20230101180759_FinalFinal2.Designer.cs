@@ -4,6 +4,7 @@ using JogosVintageWebApplication.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace JogosVintageWebApplication.Migrations
 {
     [DbContext(typeof(JogosVintageWebApplicationContext))]
-    partial class JogosVintageWebApplicationContextModelSnapshot : ModelSnapshot
+    [Migration("20230101180759_FinalFinal2")]
+    partial class FinalFinal2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

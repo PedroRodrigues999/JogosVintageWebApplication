@@ -4,6 +4,7 @@ using JogosVintageWebApplication.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace JogosVintageWebApplication.Migrations
 {
     [DbContext(typeof(JogosVintageWebApplicationContext))]
-    partial class JogosVintageWebApplicationContextModelSnapshot : ModelSnapshot
+    [Migration("20230101175620_FinalFinal")]
+    partial class FinalFinal
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -60,7 +63,7 @@ namespace JogosVintageWebApplication.Migrations
                         {
                             ID = 1,
                             Ano = 1983,
-                            Descrição = "Videojogo de plataforma desenvolvido pela Nintendo para o Famicom em 1985 no Japão e para o Nintendo Entertainment System (NES) em 1985 e 1987 na América do Norte e Europa.",
+                            Descrição = "O Nintendo Entertainment System (NES, popularmente chamado de Nintendinho no Brasil) é um console de videogame de 8 bits lançado pela Nintendo na América do Norte, Europa, Ásia, Austrália e Brasil. Originalmente lançado no Japão em 1983 com o nome de Nintendo Family Computer",
                             Imagem = "lib\\img\\Consolas\\Console1.jpg",
                             Name = "NES",
                             Processador = "8 bits",
@@ -71,7 +74,7 @@ namespace JogosVintageWebApplication.Migrations
                         {
                             ID = 2,
                             Ano = 1988,
-                            Descrição = "Consola de videojogos de 16 bits, desenvolvida e comercializada pela Sega sendo a sucessora da Master System. A consola foi lançada em 1988 no Japão como Mega Drive e em 1989 na América do Norte como Genesis.",
+                            Descrição = "Consola de vídeo jogo de 16 bits, desenvolvido e comercializado pela Sega sendo um sucessor do Master System. O console foi lançado em 1988 no Japão como Mega Drive e em 1989 na América do Norte como Genesis.",
                             Imagem = "lib\\img\\Consolas\\Console2.jpg",
                             Name = "Mega Drive",
                             Processador = "16 bits",
@@ -114,17 +117,17 @@ namespace JogosVintageWebApplication.Migrations
                         new
                         {
                             ID = 1,
-                            Descrição = "Videojogo de plataforma desenvolvido pela Nintendo para o Famicom em 1985 no Japão e para o Nintendo Entertainment System (NES) em 1985 e 1987 na América do Norte e Europa.",
+                            Descrição = "Jogo eletrônico de plataforma desenvolvido pela Nintendo Research & Development 4 e publicado pela Nintendo para o Famicom em 1985 no Japão e para o Nintendo Entertainment System (NES) em 1985 e 1987 na América do Norte e Europa.",
                             Idioma = "Inglês",
                             Imagem = "lib\\img\\Jogos\\Jogo1.jpg",
                             Modelo = "NES",
-                            Name = "Super Mario Bros",
+                            Name = "Super Mario",
                             Plataforma = "Nintendo"
                         },
                         new
                         {
                             ID = 2,
-                            Descrição = "Videojogo de beat 'em up, desenvolvido e publicado pela Sega para a Mega Drive. Foi lançado nos Estados Unidos em 31 de dezembro de 1990 e no Japão no dia 2 de agosto de 1991.",
+                            Descrição = "Jogo eletrônico de beat 'em up que foi desenvolvido e publicado pela Sega para o Mega Drive. Foi lançado nos Estados Unidos em 31 de dezembro de 1990 e no Japão no dia 2 de agosto de 1991.",
                             Idioma = "Inglês",
                             Imagem = "lib\\img\\Jogos\\Jogo2.jpg",
                             Modelo = "Mega Drive",
