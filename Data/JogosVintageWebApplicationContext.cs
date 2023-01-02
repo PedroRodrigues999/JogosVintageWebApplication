@@ -28,7 +28,7 @@ namespace JogosVintageWebApplication.Data
                     ID =1,
                     Imagem = "lib\\img\\Consolas\\Console1.jpg",
                     Name = "NES",
-                    Descrição = "Videojogo de plataforma desenvolvido pela Nintendo para o Famicom em 1985 no Japão e para o Nintendo Entertainment System (NES) em 1985 e 1987 na América do Norte e Europa.",
+                    Descrição = "A Nintendo Entertainment System (NES) é uma consola de videojogos de 8 bits lançada pela Nintendo na América do Norte, Europa, Ásia, Austrália e Brasil. Originalmente lançada no Japão em 1983 com o nome de Nintendo Family Computer.",
                     Processador = "8 bits",
                     RAM = "2 KiB + memória RAM expandida (se presente no cartucho).",
                     Saida = "Modulador RF.",
